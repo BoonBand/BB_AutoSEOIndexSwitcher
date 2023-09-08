@@ -1,14 +1,18 @@
-# Boon Band: Auto SEO Index Switcher 🎸
+=== Boon Band: Auto SEO Index Switcher ===
+Contributors: Boon Band
+Donate link: https://boon.band/support/
+Tags: seo, index, switcher, boon band, auto seo
+Requires at least: 4.6
+Tested up to: 5.8
+Stable tag: 1.0
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-## Elevate Your SEO Game 🚀
+The most advanced and rock-solid SEO Index Switcher plugin ever built! Crafted with ❤️ by Boon Band, the IT Rock Stars 🌟.
 
-Welcome to the most advanced and rock-solid SEO Index Switcher plugin ever built! Crafted with ❤️ by [Boon Band](https://boon.band/), the IT Rock Stars 🌟.
+== Description ==
 
----
-
-## Description 📝
-
-**Auto SEO Index Switcher** is the only plugin you'll ever need to manage the SEO indexing settings of your WordPress website. It's like having a backstage pass to your site's SEO!
+Welcome to the most advanced and rock-solid **Auto SEO Index Switcher** plugin ever built! Crafted with ❤️ by [Boon Band](https://boon.band/), the IT Rock Stars 🌟.
 
 ### Features 🛠
 
@@ -18,18 +22,14 @@ Welcome to the most advanced and rock-solid SEO Index Switcher plugin ever built
 - 🎨 Gorgeous admin interface
 - 🛡 Rock-solid and secure
 
----
-
-## Installation 📥
+== Installation ==
 
 1. Download the plugin and unzip it.
 2. Upload the `bb-auto-seo-index-switcher` folder to your `/wp-content/plugins/` directory.
 3. Activate the plugin through the **Plugins** menu in WordPress.
 4. Navigate to **Settings** > **Auto SEO Index Switcher** to configure.
 
----
-
-## Usage 🖱
+== Usage ==
 
 1. **Live URL**: Enter the URL of your live site.
 2. **Staging URL**: Enter the URL of your staging site.
@@ -37,32 +37,24 @@ Welcome to the most advanced and rock-solid SEO Index Switcher plugin ever built
 
 Save the settings and let the plugin do the magic! 🪄
 
----
-
-## Contribute 🤝
+== Contribute ==
 
 Feel the vibe? Join the Boon Band and contribute to making this plugin even more awesome. Check our [GitHub repo](https://github.com/BoonBand/).
 
----
-
-## Support ❤️
+== Support ==
 
 Need help? Got questions? Just want to say hi? Contact us at [Boon Band Support](https://boon.band/support/).
 
----
-
-## Credits 🎶
+== Credits ==
 
 Created and maintained by [Boon Band](https://boon.band/). The IT Rock Stars.
 
----
-
-## More from Boon Band 🎤
+== More from Boon Band ==
 
 Check out our [portfolio](https://boon.band/portfolio/) and [other plugins](https://boon.band/plugins/).
 
----
+== License ==
 
-## License 📄
+This plugin is licensed under the GNU General Public License, version 3 (GPLv3) or later.
 
-GPL3 License. Rock on! 🤘
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
