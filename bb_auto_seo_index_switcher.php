@@ -19,8 +19,8 @@ add_action('admin_menu', 'bb_auto_seo_index_switcher_menu');
 // Main function
 function bb_auto_seo_index_switcher() {
     // Always sanitize and validate the data
-    $live_url_parts = parse_url(sanitize_text_field(get_option('bb_live_url')));
-    $staging_url_parts = parse_url(sanitize_text_field(get_option('bb_staging_url')));
+    $live_url_parts = parse_url(sanitize_text_field(base64_decode(get_option('bb_live_url'))));
+    $staging_url_parts = parse_url(sanitize_text_field(base64_decode(get_option('bb_staging_url'))));
 
     $current_host = $_SERVER['HTTP_HOST'];
     $current_path = $_SERVER['REQUEST_URI'];
@@ -69,8 +69,8 @@ function bb_auto_seo_index_switcher_menu() {
 function bb_auto_seo_index_switcher_admin_page() {
     if (isset($_POST['bb_save_settings'])) {
         // Always sanitize and validate the data before saving
-        update_option('bb_live_url', sanitize_text_field($_POST['bb_live_url']));
-        update_option('bb_staging_url', sanitize_text_field($_POST['bb_staging_url']));
+        update_option('bb_live_url', base64_encode(sanitize_text_field($_POST['bb_live_url'])));
+        update_option('bb_staging_url', base64_encode(sanitize_text_field($_POST['bb_staging_url'])));
         update_option('bb_email_notifications', sanitize_text_field($_POST['bb_email_notifications']));
         echo '<div class="notice notice-success is-dismissible"><p>Settings saved!</p></div>';
     }
@@ -84,11 +84,11 @@ function bb_auto_seo_index_switcher_admin_page() {
         <form method="post" style="display: grid; gap: 20px; max-width: 400px;">
             <label>
                 Live URL:
-                <input type="text" name="bb_live_url" value="<?php echo get_option('bb_live_url'); ?>" style="width: 100%;" />
+                <input type="text" name="bb_live_url" value="<?php echo base64_decode(get_option('bb_live_url')); ?>" style="width: 100%;" />
             </label>
             <label>
                 Staging URL:
-                <input type="text" name="bb_staging_url" value="<?php echo get_option('bb_staging_url'); ?>" style="width: 100%;" />
+                <input type="text" name="bb_staging_url" value="<?php echo base64_decode(get_option('bb_staging_url')); ?>" style="width: 100%;" />
             </label>
             <label>
                 Enable email notifications:
